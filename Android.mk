@@ -51,6 +51,7 @@ LOCAL_PACKAGE_NAME := Launcher3
 # Needed so the Widgets permission is automatically granted
 LOCAL_PRIVILEGED_MODULE := true
 LOCAL_OVERRIDES_PACKAGES := Home Launcher2
+LOCAL_PRIVILEGED_MODULE := true
 
 LOCAL_FULL_LIBS_MANIFEST_FILES := $(LOCAL_PATH)/AndroidManifest-common.xml
 
