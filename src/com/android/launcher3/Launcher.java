@@ -1171,6 +1171,14 @@ public class Launcher extends Activity
         }
     }
 
+    protected boolean hasSettings() {
+        if (mLauncherCallbacks != null) {
+            return mLauncherCallbacks.hasSettings();
+        } else {
+            return true;
+        }
+    }
+
     public void addToCustomContentPage(View customContent,
             CustomContentCallbacks callbacks, String description) {
         mWorkspace.addToCustomContentPage(customContent, callbacks, description);
